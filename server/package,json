@@ -4,15 +4,21 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client"
+      "start:dev": "concurrently \"npm run server\" \"npm run build --prefix client\"",
+      "start": "node server/server.js",
+      "server": "nodemon server/server.js --ignore client",
+      "build": "webpack --mode production --config client/webpack.config.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.17.1"
+      "express": "^4.17.1",
+      "if-env": "^1.0.4"
     },
     "devDependencies": {
-        "nodemon": "^2.0.4"
+      "concurrently": "^5.2.0",
+      "nodemon": "^2.0.4"
     }
-}
+  }
+  
