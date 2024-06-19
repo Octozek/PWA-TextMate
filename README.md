@@ -58,7 +58,7 @@ npm run server
 [Live Demo](https://pwa-textmate.onrender.com/)
 
 ## Screenshots
-![Screenshot](img/Screenshot_498.png)
+![Screenshot](img/img.png)
 
 ## Technologies Used
 - HTML5
